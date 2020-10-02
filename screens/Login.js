@@ -3,7 +3,7 @@ import { Pressable, Text, TextInput, View, StyleSheet, asy } from 'react-native'
 import { useDispatch } from 'react-redux';
 import { addUser } from '../store/action';
 
-const Login = ({navigation}) => {
+const Login = () => {
     const dispatch = useDispatch()
     const [name, setName] = useState(``)
     const [password, setPassword] = useState(``)

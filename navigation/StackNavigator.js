@@ -1,7 +1,15 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import { Menu, Form, Cart } from '../screens';
+import { Menu, Form, Cart, Login } from '../screens';
 const Stack = createStackNavigator();
+
+const LoginStackNavigator = () => {
+  return (
+    <Stack.Navigator>
+      <Stack.Screen name="Login" component={Login}/>
+    </Stack.Navigator>
+  )
+}
 
 const MainStackNavigator = () => {
     return (
@@ -55,4 +63,4 @@ const CartStackNavigator = () => {
     )
 }
 
-export { MainStackNavigator, CartStackNavigator }
+export { MainStackNavigator, CartStackNavigator, LoginStackNavigator }
